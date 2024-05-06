@@ -1,0 +1,87 @@
+/*************No less than 1401px, no greater than 1475px*************/
+@media screen and (min-width: 1401px) and (max-width:1475px ){
+
+    .spot_light p{
+        font-size: 80px;
+    }
+
+
+}
+
+/*************No less than 885px, no greater than 1400px*************/
+@media screen and (min-width:885px) and (max-width:1400px){
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "nav"
+        "sl"
+        "al"
+        "main"
+        "pi"
+        "aw"
+        "ft";
+        align-items: center;
+    }
+
+    .spot_light{
+        margin-top: 50px;
+    }
+    
+    .spot_light img{
+        width: 200px;
+        height: 310px;
+    }
+
+    .spot_light p{
+        font-size: 55px;
+    }
+}
+
+/*************No less than 360px, no greater than 884px*************/
+@media screen and (min-width: 320px) and (max-width: 884px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "nav"
+        "sl"
+        "al"
+        "main"
+        "pi"
+        "aw"
+        "ft";
+        align-items: center;
+    }
+
+    .spot_light{
+        margin-top: 50px;
+    }
+
+    .spot_light p{
+        display: none;
+    }
+
+    .spot_light img{
+        width: 200px;
+        height: 310px;
+    }
+
+    .affiliate_links{
+        gap: 40px;
+    }
+
+    .publish_info{
+        align-items: center;    
+    }
+
+    .author_works {
+        margin-bottom: 50px;
+    }
+
+    
+
+}
