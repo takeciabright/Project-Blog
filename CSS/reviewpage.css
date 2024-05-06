@@ -1,6 +1,6 @@
-@import 'layout-review.css';
-@import 'typography-review.css';
-@import 'responsive-review.css';
+@import url("layout-review.css");
+@import url("typography-review.css");
+@import url("responsive-review.css");
 
 html{
     overflow-x: hidden;

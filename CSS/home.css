@@ -1,6 +1,6 @@
-@import 'layout-home.css';
-@import 'typography-home.css';
-@import 'responsive-home.css';
+@import url('layout-home.css');
+@import url('typography-home.css');
+@import url('responsive-home.css');
 
 html{
     overflow-x: hidden;
