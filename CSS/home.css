@@ -204,3 +204,34 @@ a:hover{
     box-shadow: 5px 5px 5px rgb(194, 152, 127);
 }
 
+
+
+.form-box{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: px 10px 10px 15px rgb(194, 152, 127), -10px -10px 15px #fff;
+}
+
+.form-box input{
+    font-size: 16px;
+    color: rgba(24, 52, 37, 1);
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    background: #fff;
+}
+
+.form-box button{
+    display: block;
+    color: rgba(221, 235, 229, 1);
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(192, 97, 69, 1);
+    cursor: pointer;
+    transition: .3s;
+    width: fit-content;
+    left: 100px;
+}
+
