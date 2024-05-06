@@ -1,4 +1,6 @@
-
+@import 'layout-home.css';
+@import 'typography-home.css';
+@import 'responsive-home.css';
 
 html{
     overflow-x: hidden;
@@ -6,7 +8,7 @@ html{
 
 body{ 
     min-height: 100vh;
-    margin: 0;
+    margin: 0; 
     background-color: rgba(248, 241, 236, 1);
 }
 

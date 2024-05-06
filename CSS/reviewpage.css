@@ -1,3 +1,7 @@
+@import 'layout-review.css';
+@import 'typography-review.css';
+@import 'responsive-review.css';
+
 html{
     overflow-x: hidden;
     overflow: auto;
