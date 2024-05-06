@@ -1,0 +1,98 @@
+.container{
+    display: grid;
+    grid-template-columns: 158px 990px 260px;
+    grid-template-rows: 50px 100px auto auto 50px ;
+    grid-template-areas:
+    "nav nav nav"
+    "hd hd hd"
+    "main main ab"
+    "sp sp ab"
+    "ft ft ft";
+    justify-content: center;
+}
+
+/*Navagation Bar*/
+#nav{
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    height: 50px;
+    top:0;
+    width: 100%;
+    background-color: rgba(221, 235, 229, 1);
+    box-shadow: 0px 5px 5px rgb(194, 152, 127);
+    grid-area: nav;
+}
+
+/*Header*/
+.header{
+    display: flex;
+    justify-content: center;
+    grid-area: hd;
+}
+
+/*Main picture container*/
+#feature_thumbnail{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    bottom: 137px;
+    left: 2px;
+    width:15vw;
+    grid-area: fi;
+}
+
+/*Main body*/
+.content-body{
+    display:grid;
+    position: relative;
+    grid-template-columns: 100px;
+    grid-template-rows: 10px 100px 100px 50px;
+    grid-template-areas:
+    "fi bt"
+    "fi pd"
+    "fi star"
+    "fi g"
+    "fi p1"
+    "fi p2";
+    margin-top: 315px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    bottom: 920px;
+}
+
+/*Subposts*/
+#sub-postings{
+    display: flex;
+    width: auto;
+    grid-area: sp;
+    color: rgba(24, 52, 37, 1);
+}
+
+/*About Me Section*/
+#about-Me{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    grid-area: ab;
+}
+
+/*Footer*/
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    height: 50px;
+    width: 100%;
+    grid-area: ft; 
+    bottom: 0;
+    background-color: rgba(221, 235, 229, 1);
+    color: rgba(24, 52, 37, 1);
+}

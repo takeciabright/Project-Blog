@@ -9,35 +9,9 @@ body{
     margin: 0;
     background-color: rgba(248, 241, 236, 1);
 }
-.container{
-    display: grid;
-    grid-template-columns: 158px 990px 260px;
-    grid-template-rows: 50px 100px auto auto 50px ;
-    grid-template-areas:
-    "nav nav nav"
-    "hd hd hd"
-    "main main ab"
-    "sp sp ab"
-    "ft ft ft";
-    justify-content: center;
-}
+
 
 /*Navagation Bar*/
-#nav{
-    position: fixed;
-    display: flex;
-    z-index: 1;
-    flex-direction: row;
-    align-items:center;
-    justify-content:center;
-    height: 50px;
-    top:0;
-    width: 100%;
-    background-color: rgba(221, 235, 229, 1);
-    box-shadow: 0px 5px 5px rgb(194, 152, 127);
-    grid-area: nav;
-}
-
 a{
     padding: 50px;
     text-decoration: none;
@@ -47,23 +21,6 @@ a{
 a:hover{
     color: rgba(192, 97, 69, 1);
 }
-
-.header{
-    display: flex;
-    justify-content: center;
-    grid-area: hd;
-}
-
-#feature_thumbnail{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    bottom: 137px;
-    left: 2px;
-    width:15vw;
-    grid-area: fi;
-}
-
 
 .book-image img{
     height: 375px;
@@ -87,7 +44,6 @@ a:hover{
 }
 
 /*Text of Post*/
-
 #main_content{
     margin-top: 200px;
     width: 850px;
@@ -110,25 +66,6 @@ a:hover{
 .synopsis-top,
 .synopsis-bottom{
     position: relative;
-}
-
-.content-body{
-    display:grid;
-    position: relative;
-    grid-template-columns: 100px;
-    grid-template-rows: 10px 100px 100px 50px;
-    grid-template-areas:
-    "fi bt"
-    "fi pd"
-    "fi star"
-    "fi g"
-    "fi p1"
-    "fi p2";
-    margin-top: 315px;
-    font-size: 16px;
-    align-items: center;
-    justify-content: center;
-    bottom: 920px;
 }
 
 #main_content h4{
@@ -182,12 +119,6 @@ a:hover{
 }
 
 /*Subpost Previews*/
-#sub-postings{
-    display: flex;
-    width: auto;
-    grid-area: sp;
-    color: rgba(24, 52, 37, 1);
-}
 #sub-postings img{
     margin-top: 100px;
     margin-left: 70px;
@@ -197,8 +128,6 @@ a:hover{
 }
 
 /*Subpost Header and subheader*/
-
-
 .previewOne h5,
 .previewTwo h5{
     position: relative;
@@ -218,7 +147,6 @@ a:hover{
 }
 
 /*Subpost Body*/
-
 .previewTwo{
     bottom: 500px;
 }
@@ -251,15 +179,6 @@ a:hover{
 }
 
 /*About me Section*/
-#about-Me{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    align-items: center;
-    grid-area: ab;
-}
-
-
 #about-Me img{
     width: 200px;
     height: 285px;
@@ -281,19 +200,5 @@ a:hover{
     width: 125px;
     height: 185px;
     box-shadow: 5px 5px 5px rgb(194, 152, 127);
-}
-/*Footer*/
-#footer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items:center;
-    justify-content:center;
-    height: 50px;
-    width: 100%;
-    grid-area: ft; 
-    bottom: 0;
-    background-color: rgba(221, 235, 229, 1);
-    color: rgba(24, 52, 37, 1);
 }
 
