@@ -84,6 +84,12 @@
     grid-area: aw;
 }
 
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*Footer*/
 .footer{
     display:flex;
