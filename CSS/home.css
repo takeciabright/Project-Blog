@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap');
+
 
 html{
     overflow-x: hidden;
@@ -20,7 +20,6 @@ body{
     "sp sp ab"
     "ft ft ft";
     justify-content: center;
-    font-family: "Old Standard TT";
 }
 
 /*Navagation Bar*/
@@ -85,10 +84,6 @@ a:hover{
     line-height: 35px;
     font-size: 15px;
     
-}
-
-.publish-info span{
-    font-weight: bold;
 }
 
 /*Text of Post*/
@@ -167,12 +162,10 @@ a:hover{
 }
 .synopsis-top,
 .synopsis-bottom{
-    font-style: italic;
     text-align: justify;
 }
 .synopsis-genres{
     bottom: 115px;
-    font-weight: bold;
     text-align: justify;
     grid-area: g;
 }
@@ -227,7 +220,6 @@ a:hover{
 /*Subpost Body*/
 
 .previewTwo{
-    
     bottom: 500px;
 }
 
@@ -283,7 +275,6 @@ a:hover{
 .current-read h4{
     text-align: center;
     font-size: 25px;
-    font-family: "Sacramento";
     color: rgba(192, 97, 69, 1)
 }
 .current-read img{
@@ -293,7 +284,6 @@ a:hover{
 }
 /*Footer*/
 #footer{
-    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
