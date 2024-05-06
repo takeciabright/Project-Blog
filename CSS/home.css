@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap');
+
+html{
+    overflow-x: hidden;
+}
+
+body{ 
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgba(248, 241, 236, 1);
+}
+.container{
+    display: grid;
+    grid-template-columns: 158px 990px 260px;
+    grid-template-rows: 50px 100px auto auto 50px ;
+    grid-template-areas:
+    "nav nav nav"
+    "hd hd hd"
+    "main main ab"
+    "sp sp ab"
+    "ft ft ft";
+    justify-content: center;
+    font-family: "Old Standard TT";
+}
+
+/*Navagation Bar*/
+#nav{
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    height: 50px;
+    top:0;
+    width: 100%;
+    background-color: rgba(221, 235, 229, 1);
+    box-shadow: 0px 5px 5px rgb(194, 152, 127);
+    grid-area: nav;
+}
+
+a{
+    padding: 50px;
+    text-decoration: none;
+    color: rgba(24, 52, 37, 1);
+}
+
+a:hover{
+    color: rgba(192, 97, 69, 1);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    grid-area: hd;
+}
+
+#feature_thumbnail{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    bottom: 137px;
+    left: 2px;
+    width:15vw;
+    grid-area: fi;
+}
+
+
+.book-image img{
+    height: 375px;
+    box-shadow: 5px 5px 5px rgb(194, 152, 127);
+}
+
+/*Publisher Information*/
+.publish-info{
+    position: relative;
+    right: 35px;
+    list-style-type: none;
+    grid-area: pi;
+    color: rgba(24, 52, 37, 1);
+}
+
+.publish-info ul{
+    list-style-type: none;
+    line-height: 35px;
+    font-size: 15px;
+    
+}
+
+.publish-info span{
+    font-weight: bold;
+}
+
+/*Text of Post*/
+
+#main_content{
+    margin-top: 200px;
+    width: 850px;
+    height: 485px;
+    left: 100px;
+    grid-area: main;
+    background-image: url(/images/bookfolder.png);
+    background-size:cover;
+    border-radius: 10px 20px 20px 20px;
+    box-shadow: 0px 4px 2px -2px rgb(194, 152, 127);
+    color: rgba(24, 52, 37, 1);
+   
+}
+
+#main_content,
+#main_content h4,
+#main_content h6,
+#main_content img,
+.synopsis-genres,
+.synopsis-top,
+.synopsis-bottom{
+    position: relative;
+}
+
+.content-body{
+    display:grid;
+    position: relative;
+    grid-template-columns: 100px;
+    grid-template-rows: 10px 100px 100px 50px;
+    grid-template-areas:
+    "fi bt"
+    "fi pd"
+    "fi star"
+    "fi g"
+    "fi p1"
+    "fi p2";
+    margin-top: 315px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    bottom: 920px;
+}
+
+#main_content h4{
+    width: 600px;
+    font-size: 24px;
+    grid-area: bt;
+    bottom: 133px;
+    left: 75px
+}
+
+#main_content h6{
+    bottom: 135px;
+    left: 55px;
+    width:250px;
+    grid-area: pd;
+}
+
+.star_rating img{
+    right: 49px;
+    top: 60px;
+    height: 205px;
+    transform: rotate(90deg);
+    grid-area: star;
+}
+
+.synopsis-genres,
+.synopsis-top,
+.synopsis-bottom{
+    width: 500px;
+    left: 50px;
+}
+.synopsis-top,
+.synopsis-bottom{
+    font-style: italic;
+    text-align: justify;
+}
+.synopsis-genres{
+    bottom: 115px;
+    font-weight: bold;
+    text-align: justify;
+    grid-area: g;
+}
+
+.synopsis-top{
+    bottom: 70px;
+    grid-area: p1;
+    
+}
+
+.synopsis-bottom{
+    bottom: 60px;
+    grid-area: p2;
+}
+
+/*Subpost Previews*/
+#sub-postings{
+    display: flex;
+    width: auto;
+    grid-area: sp;
+    color: rgba(24, 52, 37, 1);
+}
+#sub-postings img{
+    margin-top: 100px;
+    margin-left: 70px;
+    width:350px;
+    border-radius: 0px 5px 20px 20px;
+    box-shadow: 0 4px 2px -2px rgb(194, 152, 127) ;
+}
+
+/*Subpost Header and subheader*/
+
+
+.previewOne h5,
+.previewTwo h5{
+    position: relative;
+    font-size: 25px;
+    width: 300px;
+    left: 100px;
+    bottom: 600px;
+}
+
+.previewOne h4,
+.previewTwo h4{
+    position: relative;
+    font-size: 18px;
+    width: 315px;
+    left: 90px;
+    bottom: 625px;
+}
+
+/*Subpost Body*/
+
+.previewTwo{
+    
+    bottom: 500px;
+}
+
+.previewOne p,
+.previewTwo p,
+.previewOne span,
+.previewTwo span{
+    position: relative;
+    font-size: 16px;
+}
+
+.previewOne p,
+.previewTwo p{
+    width: 320px;
+    left: 90px;
+    bottom: 625px;
+    text-indent: 25px;
+    line-height: 30px;
+}
+.previewOne span{
+    left: 300px;
+    bottom: 620px;
+    color: rgba(192, 97, 69, 1);
+}
+.previewTwo span{
+    left: 300px;
+    bottom: 470px;
+    color: rgba(192, 97, 69, 1);
+}
+
+/*About me Section*/
+#about-Me{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    grid-area: ab;
+}
+
+
+#about-Me img{
+    width: 200px;
+    height: 285px;
+
+}
+#about-Me p{
+    text-align: center;
+    font-size: 16px;
+    color: rgba(24, 52, 37, 1);
+    
+}
+#about-Me h4,
+.current-read h4{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Sacramento";
+    color: rgba(192, 97, 69, 1)
+}
+.current-read img{
+    width: 125px;
+    height: 185px;
+    box-shadow: 5px 5px 5px rgb(194, 152, 127);
+}
+/*Footer*/
+#footer{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    height: 50px;
+    width: 100%;
+    grid-area: ft; 
+    bottom: 0;
+    background-color: rgba(221, 235, 229, 1);
+    color: rgba(24, 52, 37, 1);
+}
+
+/************* MEDIA SCREENS *************/
+
+/*************No less than 1215px, no greater than 1240px*************/
+@media screen and (min-width: 1215px)and (max-width: 1240px){
+   .publish-info{
+    width: 300px;
+   }
+
+   .content-body{
+    bottom: 849px;
+   }
+}
+
+/*************No less than 950px, no greater than 1219px*************/
+@media screen and (min-width: 950px) and (max-width: 1216px)  {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "nav"
+        "hd"
+        "main"
+        "sp"
+        "ab"
+        "ft";
+    }
+
+    .header img{
+        margin-top: 55px;
+        width: 900px;
+    }
+
+    .publish-info{
+        width: 300px;
+    }
+
+    #main_content h4{
+        width: 500px;
+        font-size: 20px;
+        bottom: 65px;
+        left: 100px;
+    }
+        
+    #main_content h6{
+        bottom: 80px;
+        left: 40px;
+        width: 250px;
+        font-size: 10px;
+        color: rgba(24, 52, 37, 0.49);
+    }
+        
+    .star_rating img{
+        right: 50px;
+        top: 130px;
+    }
+        
+    .synopsis-genres,
+    .synopsis-top,    
+    .synopsis-bottom{
+        width: 500px;
+        left: 17%;
+        font-size: 16px;
+    }
+       
+    .synopsis-genres{
+        bottom: 50px;
+            
+    }
+        
+    .synopsis-top{
+        bottom: 5px;      
+    }
+        
+    .synopsis-bottom{
+        top: 5px;
+    }
+
+    #sub-postings{
+        height: 700px;
+    }
+    #about-Me p{
+        width: 400px;
+    }
+
+    #about-Me{
+        margin-bottom: 50px;
+    }
+}
+
+/*************No less than 600px, no greater than 950px*************/
+@media screen and (min-width: 600px) and (max-width: 951px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "nav"
+        "hd"
+        "main"
+        "sp"
+        "ab"
+        "ft";
+    }
+
+    .header img{
+        margin-top: 55px;
+        margin-left: 90px;
+        width: 749px;
+    }
+    
+    .publish-info{
+        width: 253px;
+    }
+
+    #main_content{
+        width: 600px;
+        left:180px;
+    }
+
+    #main_content h4{
+        width: 500px;
+        font-size: 20px;
+        bottom: 65px;
+        left: 120px;
+    }
+        
+    #main_content h6{
+        bottom: 80px;
+        left:73px;
+        width: 250px;
+        font-size: 10px;
+        color: rgba(24, 52, 37, 0.49);
+    }
+
+    .content-body {
+        margin-top: 247px;
+    }
+
+    .star_rating img{
+        right: 12px;
+        top: 130px;
+    }
+
+    .synopsis-genres,
+    .synopsis-top,    
+    .synopsis-bottom{
+        width: 333px;
+        left: 21%;
+        font-size: 13px;
+    }
+
+    .synopsis-genres{
+        bottom: 65px;
+    }
+
+    .synopsis-top{
+        bottom: 25px;
+    }
+
+    .synopsis-bottom{
+        bottom: 12px;
+    }
+
+    #sub-postings {
+        position: relative;
+        left: 59px;
+        height: 800px;
+    }
+
+    #about-Me{
+        margin-bottom: 50px;
+    }
+
+    #about-Me p{
+        width: 300px;
+
+    }
+
+}
+
+/*************No less than 320px, no greater than 601px*************/
+@media screen and (min-width:320px) and (max-width: 601px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "nav"
+        "hd"
+        "main"
+        "sp"
+        "ab"
+        "ft";
+    }
+
+    #nav{
+        position: fixed;
+        display: flex;
+        z-index: 1;
+        flex-direction: row;
+        align-items:center;
+        justify-content:center;
+        height: 50px;
+        top:0;
+        width: 100%;
+    }
+    
+    .header{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header img{
+        position: relative;
+        left: 50px;
+        margin-top: 55px;
+        width: 600px
+        ;
+    }
+    
+    #feature_thumbnail{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        bottom: 66%;
+        left: 40px;
+        width:15vw;
+    }
+        
+        
+    .book-image img{
+        height: 375px;
+        box-shadow: 5px 5px 5px rgb(194, 152, 127);
+    }
+        
+        /*Publisher Information*/
+    .publish-info{
+        display: none;
+    }
+        
+        /*Text of Post****************************************************8*/
+        
+    #main_content{
+        width: 318px;
+        height: 540px;
+        margin-top: 500px;
+        left: 240px;
+        background-size: auto;
+        border-radius: 10px 20px 20px 20px;
+    }
+    
+    .content-body{
+        grid-template-columns:1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "bt"
+        "pd"
+        "star"
+        "g"
+        "p1"
+        "p2";
+    }
+        
+    #main_content h4{
+        width: 400px;
+        font-size: 20px;
+        bottom: 290px;
+        left: 15%
+    }
+        
+    #main_content h6{
+        bottom: 355px;
+        left: 125px;
+        width:250px;
+        font-size: 10px;
+        color: rgba(24, 52, 37, 0.49);
+    }
+        
+    .star_rating img{
+        left: 125px;
+        top: -50px;
+    }
+        
+    .synopsis-genres,
+    .synopsis-top,    
+    .synopsis-bottom{
+        width: 300px;
+        left: 100px;
+        font-size: 12px;
+    }
+       
+    .synopsis-genres{
+        bottom: 190px;
+            
+    }
+        
+    .synopsis-top{
+        bottom: 170px;      
+    }
+        
+    .synopsis-bottom{
+        bottom: 150px;
+    }
+    
+    #sub-postings{
+        flex-direction: column;
+        width: 674px;
+        align-items: center;
+        margin-left: 30px;
+    }
+    
+    #sub-postings img{
+        width:300px;
+        height: 500px;
+        border-radius: 0px 5px 20px 20px;
+    }
+        
+        /*************Subpost Header and subheader*************/
+    .previewTwo {
+        position: relative;
+        bottom: 600px;
+        height: 50px;
+    }
+    
+
+    .previewOne h5,
+    .previewTwo h5{
+        font-size: 20px;
+        width: 130px;
+        left: 123px;
+        bottom: 525px;
+    }
+        
+    .previewOne h4,
+    .previewTwo h4{
+        font-size: 16px;
+        width: 300px;
+        left: 86px;
+        bottom: 535px;
+    }
+        
+    .previewOne p,
+    .previewTwo p,
+    .previewOne span,
+    .previewTwo span{
+        font-size: 14px;
+    }
+        
+    .previewOne p,
+    .previewTwo p{
+        width: 267px;
+        left: 92px;
+        bottom: 536px;
+        text-indent: 10px;
+    }
+
+    .previewOne span{
+        left: 263px;
+        bottom: 551px;
+    }
+        
+    .previewTwo span{
+        left: 264px;
+        bottom: 434px;
+    }
+
+    #about-Me{
+        margin-bottom: 50px;
+    }
+    
+    #about-Me p{
+        width: 300px;
+        
+    }
+
+}

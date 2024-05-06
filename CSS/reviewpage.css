@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap');
+
+
+html{
+    overflow-x: hidden;
+    overflow: auto;
+}
+
+body{
+    margin: 0px;
+    background-color: rgba(248, 241, 236, 1);
+}
+
+/* Content area */
+.container{
+    display: grid;
+    grid-template-columns: 260px 999px 260px;
+    grid-template-rows: 50px 450px 50px auto 50px;
+    grid-template-areas:
+    "nav nav nav"
+    "sl sl sl"
+    "al al al"
+    "pi main aw"
+    "ft ft ft";
+    justify-content: center;
+    font-family: "Old Standard TT";
+}
+
+/* Nagivation Bar */
+.nav{
+
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 49px;
+    top:0;
+    width: 100%;
+    background-color: rgba(221, 235, 229, 1);
+    box-shadow: 0px 5px 5px rgb(194, 152, 127);
+    grid-area: nav;
+}
+
+.nav  a{
+    padding: 50px;
+    text-decoration: none;
+    color: rgba(24, 52, 37, 1);
+}
+
+.nav a:hover{
+    color: rgba(192, 97, 69, 1);
+}
+
+/* Feature Image/Banner */
+.spot_light{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    grid-area: sl;
+    background-image: linear-gradient(rgb(242, 198, 184) , rgb(140, 115, 106));
+    box-shadow: 0px 2px 5px rgb(140, 115, 106, .3) ;
+}
+
+.spot_light p{
+    position: absolute;
+    font-family: "Old Standard TT";
+    font-size: 90px;
+    color: rgb(242, 198, 184, .3);
+    z-index: 0;
+
+}
+
+.book_image img{
+    position: relative;
+    width: 250px;
+    height: 375px;
+    z-index: 0;
+    box-shadow: 5px 5px 5px rgb(82, 67, 61);
+}
+
+.star_rating img{ 
+    position: absolute;
+    top: 435px;
+    left: 650px;
+    height: 190px;
+    transform: rotate(90deg);
+}
+
+/*Main Content*/
+.main_content{
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: main;
+}
+
+.para_one,
+.para_two,
+.para_three,
+.para_four,
+.content_warnings{
+    font-size: 16px;  
+    margin-left: 10px;
+    margin-left: 10px;
+    color: rgba(24, 52, 37, 1);
+}
+
+blockquote{
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight:bolder;
+    font-style: italic;
+    border-left: 5px solid #c2c7cc;
+    color: rgba(24, 52, 37, 1);
+
+}
+
+.main_content span{
+    font-weight: bold;
+    color: rgba(24, 52, 37, 1);
+}
+
+/* Publisher Information */
+.publish_info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Old Standard TT";
+    font-size: 16px;
+    margin-right: 60px;
+    color: rgba(24, 52, 37, 1);
+    grid-area: pi;
+}
+
+.publish_info li{
+    list-style: none;
+    line-height: 25px;
+}
+
+.publish_info span{
+    font-weight: bold;
+}
+
+/* Affiliate links */
+.affiliate_links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap: 65px;
+    grid-area: al;
+}
+
+.affiliate_links img{
+    width: 40px;
+    height: 50px;
+}
+/* Other author works */
+.author_works{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    align-items: center;
+    gap: 15px;
+    grid-area: aw;
+}
+
+.author_works p{
+    position: relative;
+    font-weight: bold;
+    font-family: "Sacramento";
+    font-size: 20px;
+    color: rgba(192, 97, 69, 1);
+}
+
+.author_works li{
+    list-style: none;
+    margin: 15px;
+}
+
+.author_works img{
+    width: 100px;
+    height: 160px; 
+}
+
+/* Footer */
+.footer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    grid-area: ft;
+    background-color: rgba(221, 235, 229, 1);
+    color: rgba(24, 52, 37, 1);
+}
+
+/*************No less than 1401px, no greater than 1475px*************/
+@media screen and (min-width: 1401px) and (max-width:1475px ){
+
+    .spot_light p{
+        font-size: 80px;
+    }
+
+
+}
+
+/*************No less than 885px, no greater than 1400px*************/
+@media screen and (min-width:885px) and (max-width:1400px){
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "nav"
+        "sl"
+        "al"
+        "main"
+        "pi"
+        "aw"
+        "ft";
+        align-items: center;
+    }
+
+    .spot_light{
+        margin-top: 50px;
+    }
+    
+    .spot_light img{
+        width: 200px;
+        height: 310px;
+    }
+
+    .spot_light p{
+        font-size: 55px;
+    }
+}
+
+/*************No less than 360px, no greater than 884px*************/
+@media screen and (min-width: 320px) and (max-width: 884px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "nav"
+        "sl"
+        "al"
+        "main"
+        "pi"
+        "aw"
+        "ft";
+        align-items: center;
+    }
+
+    .spot_light{
+        margin-top: 50px;
+    }
+
+    .spot_light p{
+        display: none;
+    }
+
+    .spot_light img{
+        width: 200px;
+        height: 310px;
+    }
+
+    .affiliate_links{
+        gap: 40px;
+    }
+
+    .publish_info{
+        align-items: center;    
+    }
+
+    .author_works {
+        margin-bottom: 50px;
+    }
+
+    
+
+}
