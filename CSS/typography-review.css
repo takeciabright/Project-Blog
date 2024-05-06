@@ -10,7 +10,7 @@ body{
 }
 
 /*Addtionaltypography styles */
-.publish-info span, .main_content span{
+.publish_info span, .main_content span{
     font-weight: bold;
 }
 
