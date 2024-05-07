@@ -1,7 +1,7 @@
 /*************No less than 1401px, no greater than 1475px*************/
 @media screen and (min-width: 1401px) and (max-width:1475px ){
 
-    .spot_light p{
+    .spot_light header{
         font-size: 80px;
     }
 
@@ -36,7 +36,7 @@
         height: 310px;
     }
 
-    .spot_light p{
+    .spot_light header{
         font-size: 55px;
     }
 }
@@ -63,7 +63,7 @@
         margin-top: 50px;
     }
 
-    .spot_light p{
+    .spot_light header{
         display: none;
     }
 
