@@ -83,6 +83,17 @@
     grid-area: ab;
 }
 
+.current-read {
+    border-radius: 10px 10px 10px 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    width: 247px;
+    height: 377px;
+    border: 2px solid rgb(194, 152, 127);
+}
+
 /*Footer*/
 #footer{
     display: flex;
