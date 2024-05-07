@@ -1,12 +1,13 @@
 .container{
     display: grid;
     grid-template-columns: 260px 999px 260px;
-    grid-template-rows: 50px 450px 50px auto 50px;
+    grid-template-rows: 50px 450px 50px auto  auto 50px;
     grid-template-areas:
     "nav nav nav"
     "sl sl sl"
     "al al al"
     "pi main aw"
+    "ae ae ae"
     "ft ft ft";
     justify-content: center;
 }

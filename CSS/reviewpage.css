@@ -101,3 +101,67 @@ blockquote{
     width: 100px;
     height: 160px; 
 }
+
+.author-entry{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "auv"
+    "aun"
+    "auo"
+    "aub"
+    "aus";
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    align-content: center;
+    justify-items: center;
+    grid-area: ae;
+}
+
+.author-avatar{
+    display: grid;
+    grid-template-columns: 1fr 105px 1fr;
+    align-items: center;
+    justify-items: center;
+    column-gap: 5px;
+    grid-area: auv;
+}
+.author-avatar::before,
+.author-avatar::after{
+    display: block;
+    content: "";
+    height: .5px;
+    width: 300px;
+    background-color:rgba(192, 97, 69, 1);;
+    
+    
+}
+
+.author-avatar img{
+    width:105px;
+    height: 106px;
+    border-radius: 80px;
+}
+
+.author-name{
+    text-align: center;
+    grid-area: aun;
+}
+
+.author-occupation{
+    font-size: 14px;
+    text-align: center;
+    color: rgba(192, 98, 69, 0.649);
+    grid-area: auo;
+}
+.author-bio{
+    text-align: center;
+    width: 650px;
+    grid-area: aub;
+}
+
+.author-socials{
+    grid-area: aus;
+}
