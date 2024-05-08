@@ -33,10 +33,6 @@ a:hover, .previewOne span, .previewTwo span, #about-Me h4, .current-read h4 {
     box-shadow: 5px 5px 5px rgb(194, 152, 127);
 }
 
-.form-box {
-    box-shadow: 10px 10px 10px 15px rgb(194, 152, 127), -10px -10px 15px #fff;
-}
-
 /* Border Colors */
 .form-box input {
     border: 0.5px solid rgba(194, 152, 127, 0.504);
