@@ -258,7 +258,13 @@ left: -34px;
     margin-bottom: 5px;
 }
 
-
+.form-background{
+    border-radius: 10px;
+    background-color: rgba(221, 235, 229, 1);
+}
+.form-content h2{
+    color: rgba(24, 52, 37, 1);
+}
 .form-box{
     padding: 10px;
     border-radius: 5px;
@@ -269,23 +275,15 @@ left: -34px;
     font-size: 16px;
     color: rgba(24, 52, 37, 1);
     padding: 15px 10px;
-    border: none;
+    border: .5px solid rgba(194, 152, 127, 0.504);
+    border-radius: 10px;
     outline: none;
     background: #fff;
 }
 
-.form-box button{
-    display: block;
-    color: rgba(221, 235, 229, 1);
-    padding: 15px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 30px;
-    background: rgba(192, 97, 69, 1);
-    cursor: pointer;
-    transition: .3s;
-    width: fit-content;
-    left: 100px;
+
+.form-content{
+    text-align: center;
 }
 
 #about-Me .socials img{

@@ -67,6 +67,35 @@
     left: 63px;
 }
 
+/*Subscribe form*/
+.form-container{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-box button{
+    display: block;
+    color: rgba(24, 52, 37, 1);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(248, 241, 236, 1);
+    box-shadow: 0px 2px 5px rgba(194, 152, 127, 0.31);
+    cursor: pointer;
+    width: 200px;
+    left: 100px;
+}
+
+.subscribe-button{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
 /*Subposts*/
 #sub-postings{
     display: flex;
