@@ -7,6 +7,10 @@ body {
     background-color: rgba(221, 235, 229, 1);
 }
 
+.goodreads-link ::before{
+    background-color:rgb(194, 152, 127);
+}
+
 /* Text Colors */
 a, .publish-info, #main_content, #main_content h3, #main_content h4, #main_content h6, .synopsis-genres, .synopsis-top, .synopsis-bottom {
     color: rgba(24, 52, 37, 1);
@@ -21,16 +25,12 @@ a:hover, .previewOne span, .previewTwo span, #about-Me h4, .current-read h4 {
 }
 
 /* Box Shadows */
-.book-image img{
+.book-image img, .current-read .book{
     box-shadow: 5px 5px 5px rgb(194, 152, 127);
 }
 
 #main_content, #sub-postings img{
     box-shadow: 0px 4px 2px -2px rgb(194, 152, 127);
-}
-
-.current-read .book {
-    box-shadow: 5px 5px 5px rgb(194, 152, 127);
 }
 
 /* Border Colors */
@@ -40,4 +40,8 @@ a:hover, .previewOne span, .previewTwo span, #about-Me h4, .current-read h4 {
 
 .goodreads-link img {
     border: 2px solid rgba(194, 152, 127, 0.504);
+}
+
+#about-Me .good-header{
+border-bottom: 2px solid rgb(194, 152, 127);
 }
