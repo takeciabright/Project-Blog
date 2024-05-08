@@ -21,11 +21,11 @@ a:hover, .previewOne span, .previewTwo span, #about-Me h4, .current-read h4 {
 }
 
 /* Box Shadows */
-.book-image img, #sub-postings img {
+.book-image img{
     box-shadow: 5px 5px 5px rgb(194, 152, 127);
 }
 
-#main_content {
+#main_content, #sub-postings img{
     box-shadow: 0px 4px 2px -2px rgb(194, 152, 127);
 }
 
