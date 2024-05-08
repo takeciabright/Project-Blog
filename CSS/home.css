@@ -29,10 +29,19 @@ a:hover{
     box-shadow: 5px 5px 5px rgb(194, 152, 127);
 }
 
+/*Feature Image*/
+#feature_thumbnail figcaption{
+    width: 250px;
+}
+
+figure.book-image{
+    margin: 0;
+}
 /*Publisher Information*/
 .publish-info{
     position: relative;
     right: 35px;
+    width: 300px;
     list-style-type: none;
     grid-area: pi;
     color: rgba(24, 52, 37, 1);
@@ -61,6 +70,7 @@ a:hover{
 }
 
 #main_content,
+#main_content h3,
 #main_content h4,
 #main_content h6,
 #main_content img,
@@ -75,19 +85,24 @@ a:hover{
     font-size: 24px;
     grid-area: bt;
     bottom: 133px;
-    left: 75px
+    left: 15px
 }
 
 #main_content h6{
     bottom: 135px;
-    left: 55px;
-    width:250px;
+    left: -34px;
+    width: 352px;
     grid-area: pd;
 }
 
+#main_content h3{
+bottom: 47px;
+left: -34px;
+}
+
 .star_rating img{
-    right: 49px;
-    top: 60px;
+    right: 16px;
+    top: 18px;
     height: 205px;
     transform: rotate(90deg);
     grid-area: star;
