@@ -249,6 +249,7 @@ left: -34px;
 .form-box{
     padding: 10px;
     border-radius: 5px;
+    text-align: center;
 }
 
 .form-box input{
