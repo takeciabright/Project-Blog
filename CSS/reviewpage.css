@@ -10,11 +10,13 @@ body{
 /* Nagivation Bar */
 .nav  a{
     padding: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
     text-decoration: none;
 }
 
 /* Feature Image/Banner */
-.spot_light header{
+header{
     position: absolute;
     font-size: 90px;
     z-index: 0;
@@ -44,7 +46,7 @@ body{
 .content_warnings{
     font-size: 16px;  
     margin-left: 10px;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 blockquote{
@@ -83,20 +85,14 @@ blockquote{
 }
 
 .author-entry{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "auv"
-    "aun"
-    "auo"
-    "aub"
-    "aus";
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-top: 50px;
     margin-bottom: 100px;
-    align-content: center;
+    align-items: center;
     justify-items: center;
+    text-align: center;
     grid-area: ae;
 }
 
@@ -106,7 +102,6 @@ blockquote{
     align-items: center;
     justify-items: center;
     column-gap: 5px;
-    grid-area: auv;
 }
 .author-avatar::before,
 .author-avatar::after{
@@ -124,26 +119,23 @@ blockquote{
 
 .author-name{
     text-align: center;
-    grid-area: aun;
 }
 
 .author-occupation{
     font-size: 14px;
     text-align: center;
-    grid-area: auo;
 }
+
 .author-bio{
     text-align: center;
-    width: 650px;
-    grid-area: aub;
 }
 
 .author-socials{
     display: flex;
     justify-content: center;
     gap: 10px;
-    grid-area: aus;
 }
+
 .author-socials img{
     width: 30px;
     height: 30px;

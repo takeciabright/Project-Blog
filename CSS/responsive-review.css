@@ -76,6 +76,10 @@
         gap: 40px;
     }
 
+    div.main_content h3{
+        font-size: 18px;
+    }
+
     .publish_info{
         align-items: center;    
     }
@@ -84,6 +88,17 @@
         margin-bottom: 50px;
     }
 
-    
+    .author-entry{
+        width: 475px;
+    }
+
+    .author-profile{
+        width: 475px;
+    }
+
+    div.author-avatar::before, div.author-avatar::after{
+        width: 180px;
+    }
+
 
 }
