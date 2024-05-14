@@ -72,21 +72,21 @@ figure.book-image{
 
 #main_content h4{
     width: 600px;
-    font-size: 24px;
+    font-size: 30px;
     grid-area: bt;
     bottom: 133px;
     left: 15px
 }
 
 #main_content h6{
-    bottom: 135px;
+    bottom: 120px;
     left: -34px;
     width: 352px;
     grid-area: pd;
 }
 
 #main_content h3{
-bottom: 47px;
+bottom: 98px;
 left: -34px;
 }
 

@@ -4,7 +4,7 @@ body{
     font-family: "Old Standard TT", serif;
 }
 
-#about-Me h4{
+#about-Me h4, #main_content h4{
     font-family: "Sacramento", cursive;
 }
 
