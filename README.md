@@ -1,9 +1,21 @@
 <!--Level 1-->
 # ✏️ Personal Blog Project
-A reader's book review blog using Flexbox and Grid for **Udacity's** FEND blog project.
+Blog using Flexbox and Grid for **Udacity's** FEND project.
+
+## Table of Contents
+- [Overview](#overview)
+  - [Technologies](#technologies-used)
+  - [Live Demo](#live-demo)
+  - [Author](#author)
+
+# Overview
+### Description
+A book reviewer blog
+
+
 
 <!--Level 2-->
-## 👩🏾‍💻 Technologies Used:
+## 👩🏾‍💻Technologies Used:
 * HTML
 * CSS
 * Flexbox
